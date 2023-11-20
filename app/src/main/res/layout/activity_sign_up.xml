@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_theme_background"
+    tools:context=".activities.SignUpActivity">
+
+    <EditText
+        android:textSize="15sp"
+        android:paddingStart="10dp"
+        android:inputType="textEmailAddress"
+        android:id="@+id/regEmailField"
+        android:hint="@string/ask_for_email"
+        android:fontFamily="@font/inconsolata"
+        android:layout_width="250dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="23dp"
+        android:background="@drawable/round_border"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/img_profile_pic"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/img_profile_pic"
+        app:layout_constraintTop_toBottomOf="@+id/img_profile_pic"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:paddingStart="10dp"
+        android:textSize="15sp"
+        android:inputType="text"
+        android:id="@+id/regNameField"
+        android:hint="@string/ask_name"
+        android:fontFamily="@font/inconsolata"
+        android:layout_width="250dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/round_border"
+        app:layout_constraintEnd_toEndOf="@+id/regEmailField"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/regEmailField"
+        app:layout_constraintTop_toBottomOf="@+id/regEmailField" />
+
+    <EditText
+        android:paddingStart="10dp"
+        android:textSize="15sp"
+        android:inputType="textPassword"
+        android:fontFamily="@font/inconsolata"
+        android:hint="@string/ask_password"
+        android:id="@+id/regPwdField"
+        android:layout_width="250dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/round_border"
+        app:layout_constraintEnd_toEndOf="@+id/regNameField"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/regNameField"
+        app:layout_constraintTop_toBottomOf="@+id/regNameField"
+        />
+
+    <EditText
+        android:paddingStart="10dp"
+        android:textSize="15sp"
+        android:fontFamily="@font/inconsolata"
+        android:hint="@string/ask_conf_password"
+        android:inputType="textPassword"
+        android:id="@+id/regConfPwdField"
+        android:layout_width="250dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="11dp"
+        android:background="@drawable/round_border"
+        app:layout_constraintEnd_toEndOf="@+id/regPwdField"
+        app:layout_constraintStart_toStartOf="@+id/regPwdField"
+        app:layout_constraintTop_toBottomOf="@+id/regPwdField" />
+
+    <EditText
+        android:paddingStart="10dp"
+        android:textSize="15sp"
+        android:hint="@string/ask_username"
+        android:fontFamily="@font/inconsolata"
+        android:inputType="text"
+        android:id="@+id/regUsernameField"
+        android:layout_width="250dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/round_border"
+        app:layout_constraintEnd_toEndOf="@+id/regConfPwdField"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/regConfPwdField"
+        app:layout_constraintTop_toBottomOf="@+id/regConfPwdField" />
+
+
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/light_green_btn"
+        android:fontFamily="@font/inconsolata"
+        android:shadowColor="@color/transparent"
+        android:text="@string/register"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/regUsernameField"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/regUsernameField"
+        app:layout_constraintTop_toBottomOf="@+id/regUsernameField"
+        app:layout_constraintVertical_bias="0.148" />
+
+    <ImageView
+        android:id="@+id/img_profile_pic"
+        android:layout_width="170dp"
+        android:layout_height="145dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.196"
+        app:srcCompat="@drawable/empty_profile_pic"
+        android:contentDescription="Profile picture"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

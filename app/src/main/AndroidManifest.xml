@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TeachCode"
+        tools:targetApi="31">
+        <activity
+            android:name=".activities.ProgressStatsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.BrowseProblems"
+            android:exported="false" />
+        <activity
+            android:name=".activities.DashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.ForgotPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.DashbordActivity"
+            android:exported="false" />
+        <!--
+        <activity
+            android:name=".BrowseCourseActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".CourseChapterActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".ui.theme.CourseChapter"
+            android:exported="false" />
+
+        <activity
+            android:name=".SolveActivity"
+            android:exported="false"
+            android:label="@string/title_activity_solve"
+            android:theme="@style/Theme.TeachCode" />
+
+        <activity
+            android:name=".EditProfileActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".SignUpActivity"
+            android:exported="false"
+            android:label="@string/title_activity_sign_up"
+            android:theme="@style/Theme.TeachCode" />
+
+        <activity
+            android:name=".CourseOverviewActivity"
+            android:exported="false"
+            android:label="@string/title_activity_course_overview"
+            android:theme="@style/Theme.TeachCode" />
+
+        <activity
+            android:name=".StartActivity"
+            android:exported="false"
+            android:label="@string/title_activity_start"
+            android:theme="@style/Theme.TeachCode" />
+
+        <activity
+            android:name=".ProfileEditActivity"
+            android:exported="false"
+            android:label="@string/title_activity_profile_edit"
+            android:theme="@style/Theme.TeachCode" />
+
+        <activity
+            android:name=".ui.theme.ProfileEditActivity"
+            android:exported="false"
+            android:label="@string/title_activity_profile_edit"
+            android:theme="@style/Theme.TeachCode" />
+
+        <activity
+            android:name=".DashboardActivity"
+            android:exported="false"
+            android:label="@string/title_activity_dashboard"
+            android:theme="@style/Theme.TeachCode" />
+        -->
+        <activity
+            android:name=".activities.BrowseCourseActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.CourseChapterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.CourseOverviewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.EditProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.SignUpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.SolveActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.StartActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

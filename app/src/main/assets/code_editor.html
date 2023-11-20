@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CodeMirror Example</title>
+    <link rel="stylesheet" href="codemirror.css"> <!-- Link to CodeMirror CSS file -->
+    <script src="codemirror.js"></script> <!-- Link to CodeMirror JavaScript file -->
+</head>
+<body>
+<label for="modeSelect">Select Mode:</label>
+<select id="modeSelect" onchange="changeMode()">
+    <option value="java">JavaScript</option>
+    <option value="python">Python</option>
+    <option value="cpp">XML</option>
+    <!-- Add more options for other modes as needed -->
+</select>
+<textarea id="myCodeMirror"></textarea> <!-- Textarea element to be used as CodeMirror editor -->
+<script>
+    // Initialize CodeMirror with default mode as JavaScript
+    var myCodeMirror = CodeMirror.fromTextArea(document.getElementById("myCodeMirror"), {
+      lineNumbers: true,
+      mode: "javascript"
+    });
+
+    // Function to change CodeMirror mode based on user selection
+    function changeMode() {
+      var modeSelect = document.getElementById("modeSelect");
+      var selectedMode = modeSelect.options[modeSelect.selectedIndex].value;
+      myCodeMirror.setOption("mode", selectedMode);
+    }
+  </script>
+</body>
+</html>

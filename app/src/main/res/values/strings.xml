@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">TeachCode</string>
+    <string name="title_activity_sign_up">SignUpActivity</string>
+    <string name="title_activity_start">StartActivity</string>
+    <string name="title_activity_dashboard">DashboardActivity</string>
+    <string name="title_activity_profile_edit">ProfileEditActivity</string>
+    <string name="title_activity_course_overview">CourseOverviewActivity</string>
+    <string name="title_activity_solve">SolveActivity</string>
+    <string name="start_act_greeting">Hello! Welcome!</string>
+    <string name="ask_for_email">Email: </string>
+    <string name="ask_username">Username: </string>
+    <string name="ask_password">Password: </string>
+    <string name="ask_conf_password">Confirm password: </string>
+    <string name="ask_name">Name: </string>
+    <string name="ask_last_name">Last name: </string>
+    <string name="or">or</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="sign_up">No account? Sign up!</string>
+    <string name="sign_in">Sign in</string>
+    <string name="register">Register</string>
+</resources>
